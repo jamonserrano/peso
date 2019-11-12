@@ -1,1 +1,9 @@
-export const measure = (item: Element) => item.getBoundingClientRect();
+import { Item } from "./types";
+
+export const measure = (item: Item) => {
+	if (item instanceof Element) {
+		return item.getBoundingClientRect();
+	} else {
+		return null;
+	}
+};

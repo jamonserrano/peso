@@ -1,2 +1,4 @@
-export const getData = (key: string) => (item: Element) =>
-	item instanceof HTMLElement ? item.dataset[key] : undefined;
+import { Item } from "./types";
+
+export const getData = (key: string) => (item: Item) =>
+	item instanceof HTMLElement ? item.dataset[key] : null;

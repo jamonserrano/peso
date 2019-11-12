@@ -1,3 +1,1 @@
-export const create = (type: string, properties: object) => [
-	Object.assign(document.createElement(type), properties)
-];
+export const create = (type: string) => document.createElement(type);

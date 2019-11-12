@@ -1,2 +1,4 @@
-export const getAttribute = (attribute: string) => (item: Element) =>
-	item.getAttribute(attribute);
+import { Item } from "./types";
+
+export const getAttribute = (attribute: string) => (item: Item) =>
+	item instanceof Element ? item.getAttribute(attribute) : null;

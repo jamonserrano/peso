@@ -1,8 +1,9 @@
-export const insertBefore = (target: Element | Text) => (
-	item: Element | Text | Document | DocumentFragment
-) => {
-	target.before(item);
-	target.parentNode && target.parentNode.normalize();
+import { Item } from "./types";
 
+export const insertBefore = (target: Item) => (item: Item) => {
+	if (target instanceof Element || target instanceof Text) {
+		target.before(item);
+		target.parentNode && target.parentNode.normalize();
+	}
 	return item;
 };

@@ -1,6 +1,6 @@
-export const setProperty = (property: string, value: any) => (
-	item: Text | Element | Document | DocumentFragment | Window
-) => {
+import { Item } from "./types";
+
+export const setProperty = (property: string, value: any) => (item: Item) => {
 	item[property] = value;
 
 	return item;

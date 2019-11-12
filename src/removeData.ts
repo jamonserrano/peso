@@ -1,7 +1,7 @@
-export const removeData = (key: string) => (item: Element) => {
-	if (item instanceof HTMLElement) {
-		delete item.dataset[key];
-	}
+import { Item } from "./types";
+
+export const removeData = (key: string) => (item: Item) => {
+	item instanceof HTMLElement && delete item.dataset[key];
 
 	return item;
 };

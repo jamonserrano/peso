@@ -1,8 +1,10 @@
-export const after = (
-	subject: Element | Text | Document | DocumentFragment
-) => (item: Element | Text) => {
-	item.after(subject.cloneNode());
-	item.parentNode && item.parentNode.normalize();
+import { Item } from "./types";
+
+export const after = (subject: Item) => (item: Item) => {
+	if (item instanceof Element || item instanceof Text) {
+		item.after(subject);
+		item.parentNode && item.parentNode.normalize();
+	}
 
 	return item;
 };

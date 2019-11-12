@@ -1,4 +1,6 @@
-export const setData = (key: string, value: any) => (item: Element) => {
+import { Item } from "./types";
+
+export const setData = (key: string, value: any) => (item: Item) => {
 	if (item instanceof HTMLElement) {
 		item.dataset[key] = value;
 	}

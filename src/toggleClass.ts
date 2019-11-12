@@ -1,5 +1,7 @@
-export const toggleClass = (className: string) => (item: Element) => {
-	item.classList.toggle(className);
+import { Item } from "./types";
+
+export const toggleClass = (className: string) => (item: Item) => {
+	item instanceof Element && item.classList.toggle(className);
 
 	return item;
 };

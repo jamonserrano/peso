@@ -1,3 +1,3 @@
-export const clone = (deep: boolean) => (
-	item: Element | Text | Document | DocumentFragment
-) => item.cloneNode(deep);
+import { Item } from "./types";
+
+export const clone = (deep: boolean) => (item: Item) => item.cloneNode(deep);

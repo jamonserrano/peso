@@ -1,3 +1,3 @@
-export const getProperty = (property: string) => (
-	item: Text | Element | Document | DocumentFragment | Window
-) => item[property];
+import { Item } from "./types";
+
+export const getProperty = (property: string) => (item: Item) => item[property];

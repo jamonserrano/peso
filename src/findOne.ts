@@ -1,11 +1,17 @@
-export const findOne = (selector: string) => (item: Element) => {
-	const originalId = item.id;
-	const didNotHaveId = !originalId;
-	const id = originalId || "jamon-temporary-id";
+import { Item } from "./types";
 
-	didNotHaveId && item.setAttribute("id", id);
-	const result = item.querySelector(`#${id} ${selector}`);
-	didNotHaveId && item.removeAttribute("id");
+export const findOne = (selector: string) => (item: Item) => {
+	if (item instanceof Element) {
+		const originalId = item.id;
+		const didNotHaveId = !originalId;
+		const id = originalId || "jamon-temporary-id";
 
-	return result;
+		didNotHaveId && item.setAttribute("id", id);
+		const result = item.querySelector(`#${id} ${selector}`);
+		didNotHaveId && item.removeAttribute("id");
+
+		return result;
+	} else if (item instanceof Document || item instanceof DocumentFragment) {
+		return item.querySelector(selector);
+	}
 };
