@@ -1,6 +1,8 @@
 import { Item } from "./types";
 
-export const setPosition = ({ x, y }) => (item: Item) => {
+export const setPosition = ({ x, y }: { x: number; y: number }) => (
+	item: Item
+) => {
 	if (item instanceof HTMLElement) {
 		const offsetParent = item.offsetParent || document.body;
 		const parentRect = offsetParent.getBoundingClientRect();
