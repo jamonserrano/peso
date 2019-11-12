@@ -1,6 +1,6 @@
 import { Item } from "./types";
 
-export const prepend = (subject: Item) => (item: Item) => {
+export const prepend = (subject: Item | string) => (item: Item) => {
 	if (
 		item instanceof Element ||
 		item instanceof Document ||
