@@ -6,7 +6,7 @@ export const append = (subject: Item) => (item: Item) => {
 		item instanceof Document ||
 		item instanceof DocumentFragment
 	) {
-		item.append(subject.cloneNode(true));
+		item.append(subject);
 		item.normalize();
 	}
 

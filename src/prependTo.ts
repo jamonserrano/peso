@@ -1,13 +1,17 @@
 import { Item } from "./types";
 
-export const prependTo = (target: Item) => (item: Item) => {
+export const prependTo = (target: Item) => {
 	if (
 		target instanceof Element ||
 		target instanceof Document ||
 		target instanceof DocumentFragment
 	) {
-		target.prepend(item);
-		target.normalize();
+		return (item: Item) => {
+			target.prepend(item);
+			target.normalize();
+			return item;
+		};
+	} else {
+		return (item: Item) => item;
 	}
-	return item;
 };
