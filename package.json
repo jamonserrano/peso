@@ -1,0 +1,33 @@
+{
+  "name": "peso",
+  "version": "0.1.0",
+  "description": "Lodash for the DOM",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamonserrano/peso.git"
+  },
+  "keywords": [
+    "dom",
+    "lodash",
+    "util",
+    "fp"
+  ],
+  "author": "Viktor Honti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamonserrano/peso/issues"
+  },
+  "homepage": "https://github.com/jamonserrano/peso#readme",
+  "sideEffects": false
+}
