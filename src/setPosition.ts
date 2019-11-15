@@ -1,9 +1,10 @@
 import { Item } from "./types";
+import { isHTMLElement } from "./isHTMLElement";
 
 export const setPosition = ({ x, y }: { x: number; y: number }) => (
 	item: Item
 ) => {
-	if (item instanceof HTMLElement) {
+	if (isHTMLElement(item)) {
 		const offsetParent = item.offsetParent || document.body;
 		const parentRect = offsetParent.getBoundingClientRect();
 		const computedStyle = getComputedStyle(item);

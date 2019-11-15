@@ -1,7 +1,10 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
+import { isDocument } from "./isDocument";
+import { isFragment } from "./isFragment";
 
 export const findOne = (selector: string) => (item: Item) => {
-	if (item instanceof Element) {
+	if (isElement(item)) {
 		const originalId = item.id;
 		const didNotHaveId = !originalId;
 		const id = originalId || "peso-temp-id";
@@ -11,7 +14,7 @@ export const findOne = (selector: string) => (item: Item) => {
 		didNotHaveId && item.removeAttribute("id");
 
 		return result;
-	} else if (item instanceof Document || item instanceof DocumentFragment) {
+	} else if (isDocument(item) || isFragment(item)) {
 		return item.querySelector(selector);
 	}
 };

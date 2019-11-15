@@ -1,4 +1,5 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
 
 export const getAttr = (attribute: string) => (item: Item) =>
-	item instanceof Element ? item.getAttribute(attribute) : null;
+	isElement(item) ? item.getAttribute(attribute) : null;

@@ -1,13 +1,9 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
+import { isDocument } from "./isDocument";
+import { isFragment } from "./isFragment";
 
-export const children = (item: Item) => {
-	if (
-		item instanceof Element ||
-		item instanceof Document ||
-		item instanceof DocumentFragment
-	) {
-		return [...item.children];
-	} else {
-		return [];
-	}
-};
+export const children = (item: Item) =>
+	isElement(item) || isDocument(item) || isFragment(item)
+		? [...item.children]
+		: [];

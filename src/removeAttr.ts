@@ -1,7 +1,8 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
 
 export const removeAttr = (attribute: string) => (item: Item) => {
-	item instanceof Element && item.removeAttribute(attribute);
+	isElement(item) && item.removeAttribute(attribute);
 
 	return item;
 };

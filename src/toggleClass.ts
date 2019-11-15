@@ -1,7 +1,8 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
 
 export const toggleClass = (className: string) => (item: Item) => {
-	item instanceof Element && item.classList.toggle(className);
+	isElement(item) && item.classList.toggle(className);
 
 	return item;
 };

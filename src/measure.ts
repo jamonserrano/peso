@@ -1,9 +1,4 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
 
-export const measure = (item: Item) => {
-	if (item instanceof Element) {
-		return item.getBoundingClientRect();
-	} else {
-		return null;
-	}
-};
+export const measure = (item: Item) => isElement(item) ? item.getBoundingClientRect() : null;

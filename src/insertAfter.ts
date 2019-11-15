@@ -1,7 +1,9 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
+import { isText } from "./isText";
 
 export const insertAfter = (target: Item) => (item: Item) => {
-	if (target instanceof Element || target instanceof Text) {
+	if (isElement(target) || isText(target)) {
 		target.after(item);
 		target.parentNode && target.parentNode.normalize();
 	}

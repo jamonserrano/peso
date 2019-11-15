@@ -1,7 +1,8 @@
 import { Item } from "./types";
+import { isElement } from "./isElement";
 
 export const addClass = (className: string) => (item: Item) => {
-	item instanceof Element && item.classList.add(className);
+	isElement(item) && item.classList.add(className);
 
 	return item;
 };

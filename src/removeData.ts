@@ -1,7 +1,8 @@
 import { Item } from "./types";
+import { isHTMLElement } from "./isHTMLElement";
 
 export const removeData = (key: string) => (item: Item) => {
-	item instanceof HTMLElement && delete item.dataset[key];
+	isHTMLElement(item) && delete item.dataset[key];
 
 	return item;
 };
