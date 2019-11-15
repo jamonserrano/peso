@@ -1,1 +1,3 @@
-export declare const element: (type: string) => HTMLElement;
+export declare const element: (type: string, props: {
+    [key: string]: string;
+}) => HTMLElement;
