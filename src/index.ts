@@ -14,7 +14,7 @@ export { fragment } from "./fragment";
 export { getAttribute } from "./getAttribute";
 export { getData } from "./getData";
 export { getOffset } from "./getOffset";
-export { getProperty } from "./getProperty";
+export { getProp } from "./getProp";
 export { getStyle } from "./getStyle";
 export { hasClass } from "./hasClass";
 export { insertAfter } from "./insertAfter";
