@@ -1,17 +1,14 @@
 import { Item } from "./types";
 
-export const appendTo = (target: Item) => {
+export const appendTo = (target: Item) => (item: Item) => {
 	if (
 		target instanceof Element ||
 		target instanceof Document ||
 		target instanceof DocumentFragment
 	) {
-		return (item: Item) => {
-			target.append(item);
-			target.normalize();
-			return item;
-		};
-	} else {
-		return (item: Item) => item;
+		target.append(item);
+		target.normalize();
 	}
+
+	return item;
 };
