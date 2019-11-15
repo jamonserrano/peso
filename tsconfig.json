@@ -5,7 +5,8 @@
 		"declaration": true,
 		"declarationDir": "types",
 		"outDir": "lib",
-		"module": "esnext"
+		"module": "esnext",
+		"strict": true
 	},
 	"include": ["src"]
 }

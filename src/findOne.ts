@@ -16,5 +16,7 @@ export const findOne = (selector: string) => (item: Item) => {
 		return result;
 	} else if (isDocument(item) || isFragment(item)) {
 		return item.querySelector(selector);
+	} else {
+		return null;
 	}
 };

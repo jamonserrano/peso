@@ -15,5 +15,7 @@ export const findAll = (selector: string) => (item: Item) => {
 		return [...result];
 	} else if (isDocument(item) || isFragment(item)) {
 		return [...item.querySelectorAll(selector)];
+	} else {
+		return [];
 	}
 };

@@ -21,8 +21,8 @@ export const setPosition = ({ x, y }: { x: number; y: number }) => (
 			style.position = "relative";
 		} else {
 			// get the original position of relative and absolute positioned elements
-			originalLeft = item.offsetLeft - (parseFloat(computedStyle.left) || 0);
-			originalTop = item.offsetTop - (parseFloat(computedStyle.top) || 0);
+			originalLeft = item.offsetLeft - parseFloat(computedStyle.left || "0");
+			originalTop = item.offsetTop - parseFloat(computedStyle.top || "0");
 		}
 
 		// subtract the offsets of the element and its parent to get the absolute position
