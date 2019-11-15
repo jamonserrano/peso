@@ -6,5 +6,6 @@
 		"declarationDir": "types",
 		"outDir": "lib",
 		"module": "esnext"
-	}
+	},
+	"include": ["src"]
 }
