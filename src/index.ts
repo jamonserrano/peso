@@ -36,7 +36,7 @@ export { removeData } from "./removeData";
 export { removeProperty } from "./removeProperty";
 export { replace } from "./replace";
 export { replaceWith } from "./replaceWith";
-export { setAttribute } from "./setAttribute";
+export { setAttr } from "./setAttr";
 export { setData } from "./setData";
 export { setPosition } from "./setPosition";
 export { setProp } from "./setProp";
