@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "Lodash for the DOM",
   "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "types": "./types/index.d.ts",
   "files": [
     "lib"
@@ -11,7 +12,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "watch": "tsc -w",
+    "watch": "npm run clean && tsc -w",
     "clean": "rm -rf lib && rm -rf types",
     "clean-build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

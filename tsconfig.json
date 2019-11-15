@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
+		"target": "es2019",
 		"lib": ["es6", "es2017.object", "dom.iterable", "dom"],
 		"declaration": true,
 		"declarationDir": "types",
 		"outDir": "lib",
-		"module": "esnext",
+		"module": "es6",
 		"strict": true
 	},
 	"include": ["src"]
