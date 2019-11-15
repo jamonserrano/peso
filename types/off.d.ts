@@ -1,1 +1,1 @@
-export declare const off: (event: string, listener: (e: Event) => any, options?: EventListenerOptions) => (item: Element | Text | Document | DocumentFragment | Window) => Element | Text | Document | DocumentFragment | Window;
+export declare const off: (listener: (e: Event) => any, options?: EventListenerOptions) => (event: string) => (item: Element | Text | Document | DocumentFragment | Window) => Element | Text | Document | DocumentFragment | Window;
