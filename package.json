@@ -11,6 +11,8 @@
     "lib": "lib"
   },
   "scripts": {
+    "watch": "tsc -w",
+    "clean": "rm -rf lib && rm -rf types",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
