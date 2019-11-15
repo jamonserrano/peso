@@ -12,7 +12,7 @@
   },
   "scripts": {
     "watch": "tsc -w",
-    "clean": "rm -rf lib && rm -rf types",
+    "clean": "rm -rf lib && rm -rf types && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
