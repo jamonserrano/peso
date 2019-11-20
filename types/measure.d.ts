@@ -1,2 +1,2 @@
 import { Item } from "./types";
-export declare const measure: (item: Item) => ClientRect | null;
+export declare const measure: (item: Item) => DOMRect | null;
