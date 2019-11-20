@@ -30,7 +30,7 @@ describe("addClass", () => {
 		expect(el.classList.add).toBeCalledWith(className);
 	});
 
-	it("should add multiple class names", () => {
+	it("should work with multiple class names", () => {
 		const el = mockHTMLElement();
 		const classNames = "a b";
 		el.classList.add = jest.fn();
