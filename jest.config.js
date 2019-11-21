@@ -3,7 +3,8 @@ module.exports = {
   testEnvironment: "jsdom",
   collectCoverage: true,
   collectCoverageFrom: ["./src/*.ts"],
-  coverageReporters: ["text-summary"],
+  coverageReporters: ["text-summary", "lcov"],
+  coverageDirectory: "./test/coverage",
 	globals: {
 		"ts-jest": {
       tsConfig: "./tsconfig.test.json",
