@@ -13,7 +13,6 @@ export { findOne } from "./findOne";
 export { fragment } from "./fragment";
 export { getAttr } from "./getAttr";
 export { getData } from "./getData";
-export { getOffset } from "./getOffset";
 export { getStyle } from "./getStyle";
 export { hasClass } from "./hasClass";
 export { insertAfter } from "./insertAfter";
