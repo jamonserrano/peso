@@ -19,8 +19,8 @@ jobs:
       env:
         CI: true
     - name: coverage
-      uses: coverallsapp/github-action@master
+      uses: codecov/codecov-action@v1
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ./test/coverage/lcov.info
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./test/coverage/lcov.info
         
