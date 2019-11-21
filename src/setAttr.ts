@@ -1,9 +1,13 @@
 import { isElement } from "./isElement";
 
-export const setAttr = (attribute: string, value: any) => (
+export const setAttr = (attributes: { [attribute: string]: string }) => (
 	item: Element | Text | Document | DocumentFragment
 ) => {
-	isElement(item) && item.setAttribute(attribute, value);
+	if (isElement(item)) {
+		Object.entries(attributes).forEach(([attribute, value]) =>
+			item.setAttribute(attribute, value)
+		);
+	}
 
 	return item;
 };
