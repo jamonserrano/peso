@@ -36,7 +36,6 @@ export { replace } from "./replace";
 export { replaceWith } from "./replaceWith";
 export { setAttr } from "./setAttr";
 export { setData } from "./setData";
-export { setPosition } from "./setPosition";
 export { setStyle } from "./setStyle";
 export { text } from "./text";
 export { toggleClass } from "./toggleClass";
