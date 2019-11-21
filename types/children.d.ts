@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const children: (item: Item) => Element[];
+export declare const children: (item: Element | Text | Document | DocumentFragment) => Element[];

@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const clone: (deep?: boolean | undefined) => (item: Item) => Node;
+export declare const clone: (deep?: boolean | undefined) => (item: Element | Text | Document | DocumentFragment) => Node;

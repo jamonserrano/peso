@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const remove: (item: Item) => void;
+export declare const remove: (item: Element | Text | Document | DocumentFragment) => void;

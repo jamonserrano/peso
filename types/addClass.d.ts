@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const addClass: (className: string) => (item: Item) => Item;
+export declare const addClass: (className: string) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;

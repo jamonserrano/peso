@@ -1,7 +1,6 @@
-import { Item } from "./types";
 import { isElement } from "./isElement";
 
-export const removeClass = (className: string) => (item: Item) => {
+export const removeClass = (className: string) => (item: Element | Text | Document | DocumentFragment) => {
 	isElement(item) && item.classList.remove(...className.split(" "));
 
 	return item;

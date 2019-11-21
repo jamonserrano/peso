@@ -1,3 +1,2 @@
-import { Item } from "./types";
 
-export const parent = (item: Item) => item.parentElement;
+export const parent = (item: Element | Text | Document | DocumentFragment) => item.parentElement;

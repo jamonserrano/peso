@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const insertBefore: (target: Item) => (item: Item) => Item;
+export declare const insertBefore: (target: Element | Text | Document | DocumentFragment) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;

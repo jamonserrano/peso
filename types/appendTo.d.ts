@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const appendTo: (target: Item) => (item: Item) => Item;
+export declare const appendTo: (target: Element | Text | Document | DocumentFragment) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;

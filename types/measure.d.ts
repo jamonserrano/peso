@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const measure: (item: Item) => DOMRect | null;
+export declare const measure: (item: Element | Text | Document | DocumentFragment) => DOMRect | null;

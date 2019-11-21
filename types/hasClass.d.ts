@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const hasClass: (className: string) => (item: Item) => boolean;
+export declare const hasClass: (className: string) => (item: Element | Text | Document | DocumentFragment) => boolean;

@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const parent: (item: Item) => HTMLElement | null;
+export declare const parent: (item: Element | Text | Document | DocumentFragment) => HTMLElement | null;

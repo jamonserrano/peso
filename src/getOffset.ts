@@ -1,7 +1,6 @@
-import { Item } from "./types";
 import { isHTMLElement } from "./isHTMLElement";
 
-export const getOffset = (item: Item) =>
+export const getOffset = (item: Element | Text | Document | DocumentFragment) =>
 	isHTMLElement(item)
 		? {
 				left: item.offsetLeft,

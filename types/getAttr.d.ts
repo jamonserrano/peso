@@ -1,2 +1,1 @@
-import { Item } from "./types";
-export declare const getAttr: (attribute: string) => (item: Item) => string | null;
+export declare const getAttr: (attribute: string) => (item: Element | Text | Document | DocumentFragment) => string | null;
