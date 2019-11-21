@@ -1,1 +1,3 @@
-export declare const setData: (key: string, value: any) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+export declare const setData: (data: {
+    [key: string]: any;
+}) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;

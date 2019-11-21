@@ -1,10 +1,10 @@
 import { isHTMLElement } from "./isHTMLElement";
 
-export const setData = (key: string, value: any) => (
+export const setData = (data: { [key: string]: any }) => (
 	item: Element | Text | Document | DocumentFragment
 ) => {
 	if (isHTMLElement(item)) {
-		item.dataset[key] = value;
+		Object.entries(data).forEach(([key, value]) => (item.dataset[key] = value));
 	}
 
 	return item;
