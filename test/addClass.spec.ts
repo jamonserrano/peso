@@ -40,14 +40,9 @@ describe("addClass", () => {
 	});
 
 	it("should skip non-element targets", () => {
-		const txt = mockText();
-		const fr = mockFragment();
-		const doc = mockDocument();
-
+		const items = [mockText(), mockFragment(), mockDocument()]
 		const add = addClass(className);
 
-		expect(add(txt)).toBe(txt);
-		expect(add(fr)).toBe(fr);
-		expect(add(doc)).toBe(doc);
+		expect(items.map(add)).toEqual(items);
 	});
 });

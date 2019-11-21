@@ -37,14 +37,9 @@ describe("toggleClass", () => {
 	});
 
 	it("should skip non-element targets", () => {
-		const txt = mockText();
-		const fr = mockFragment();
-		const doc = mockDocument();
-
+		const items = [mockText(), mockFragment(), mockDocument()]
 		const toggle = toggleClass(className);
 
-		expect(toggle(txt)).toBe(txt);
-		expect(toggle(fr)).toBe(fr);
-		expect(toggle(doc)).toBe(doc);
+		expect(items.map(toggle)).toEqual(items);
 	});
 });

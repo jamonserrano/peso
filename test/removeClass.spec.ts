@@ -40,14 +40,9 @@ describe("removeClass", () => {
 	});
 
 	it("should skip non-element targets", () => {
-		const txt = mockText();
-		const fr = mockFragment();
-		const doc = mockDocument();
-
+		const items = [mockText(), mockFragment(), mockDocument()]
 		const remove = removeClass(className);
 
-		expect(remove(txt)).toBe(txt);
-		expect(remove(fr)).toBe(fr);
-		expect(remove(doc)).toBe(doc);
+		expect(items.map(remove)).toEqual(items);
 	});
 });
