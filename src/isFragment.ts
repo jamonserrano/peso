@@ -1,1 +1,2 @@
-export const isFragment = (ref: any): ref is DocumentFragment => ref instanceof DocumentFragment;
+export const isFragment = (ref: any): ref is DocumentFragment =>
+	ref instanceof DocumentFragment;

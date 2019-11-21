@@ -2,7 +2,9 @@ import { isElement } from "./isElement";
 import { isDocument } from "./isDocument";
 import { isFragment } from "./isFragment";
 
-export const findOne = (selector: string) => (item: Element | Text | Document | DocumentFragment) => {
+export const findOne = (selector: string) => (
+	item: Element | Text | Document | DocumentFragment
+) => {
 	if (isElement(item)) {
 		const originalId = item.id;
 		const didNotHaveId = !originalId;
