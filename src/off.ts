@@ -1,6 +1,5 @@
-export const off = (
-	listener: (e: Event) => any,
-	options: EventListenerOptions = {}
+export const off = (options: EventListenerOptions = {}) => (
+	listener: (e: Event) => any
 ) => (event: string) => (
 	item: Element | Text | Document | DocumentFragment | Window
 ) => {
