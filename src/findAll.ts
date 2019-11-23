@@ -4,19 +4,7 @@ import { isFragment } from "./isFragment";
 
 export const findAll = (selector: string) => (
 	item: Element | Text | Document | DocumentFragment
-) => {
-	if (isElement(item)) {
-		const originalId = item.id;
-		const didNotHaveId = !originalId;
-		const id = originalId || "peso-temp-id";
-
-		didNotHaveId && item.setAttribute("id", id);
-		const result = item.querySelectorAll(`#${id} ${selector}`);
-		didNotHaveId && item.removeAttribute("id");
-		return [...result];
-	} else if (isDocument(item) || isFragment(item)) {
-		return [...item.querySelectorAll(selector)];
-	} else {
-		return [];
-	}
-};
+) =>
+	isElement(item) || isDocument(item) || isFragment(item)
+		? [...item.querySelectorAll(`:scope ${selector}`)]
+		: [];
