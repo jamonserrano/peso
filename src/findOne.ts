@@ -4,20 +4,7 @@ import { isFragment } from "./isFragment";
 
 export const findOne = (selector: string) => (
 	item: Element | Text | Document | DocumentFragment
-) => {
-	if (isElement(item)) {
-		const originalId = item.id;
-		const didNotHaveId = !originalId;
-		const id = originalId || "peso-temp-id";
-
-		didNotHaveId && item.setAttribute("id", id);
-		const result = item.querySelector(`#${id} ${selector}`);
-		didNotHaveId && item.removeAttribute("id");
-
-		return result;
-	} else if (isDocument(item) || isFragment(item)) {
-		return item.querySelector(selector);
-	} else {
-		return null;
-	}
-};
+) =>
+	isElement(item) || isDocument(item) || isFragment(item)
+		? item.querySelector(`:scope ${selector}`)
+		: null;
