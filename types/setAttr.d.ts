@@ -1,3 +1,5 @@
-export declare const setAttr: (attributes: {
+declare type Attributes = {
     [attribute: string]: string;
-}) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+};
+export declare const setAttr: (attributes: Attributes) => (item: Element) => Element;
+export {};

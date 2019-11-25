@@ -1,13 +1,9 @@
-import { isElement } from "./isElement";
+type Attributes = { [attribute: string]: string };
 
-export const setAttr = (attributes: { [attribute: string]: string }) => (
-	item: Element | Text | Document | DocumentFragment
-) => {
-	if (isElement(item)) {
-		Object.entries(attributes).forEach(([attribute, value]) =>
-			item.setAttribute(attribute, value)
-		);
-	}
+export const setAttr = (attributes: Attributes) => (item: Element) => {
+	Object.entries(attributes).forEach(([attribute, value]) =>
+		item.setAttribute(attribute, value)
+	);
 
 	return item;
 };
