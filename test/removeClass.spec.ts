@@ -1,31 +1,15 @@
 import { removeClass } from "../src/removeClass";
-import { mockHTMLElement, mockText, mockDocument, mockFragment, mockSVGElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/nodes";
 
 describe("removeClass", () => {
 	const className = "a";
 
-	it("should be curried", () => {
-		expect(removeClass.length).toBe(1);
-		const result = removeClass(className);
-		expect(typeof result).toBe("function");
-	});
-
-	it("should work on html elements", () => {
+	it("should call classList.remove()", () => {
 		const el = mockHTMLElement();
 		el.classList.remove = jest.fn();
 
 		const result = removeClass(className)(el);
-		
-		expect(result).toBe(el);
-		expect(el.classList.remove).toBeCalledWith(className);
-	});
 
-	it("should work on svg elements", () => {
-		const el = mockSVGElement();
-		el.classList.remove = jest.fn();
-
-		const result = removeClass(className)(el);
-		
 		expect(result).toBe(el);
 		expect(el.classList.remove).toBeCalledWith(className);
 	});
