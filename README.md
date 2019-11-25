@@ -140,7 +140,7 @@ Appends the subject as the last child of the item.
 
 1. subject: `Element | Text | DocumentFragment | string` – the subject to append to the item
 
-2. item: `Element | Text | Document | DocumentFragment` - the item 
+2. item: `Element | Document | DocumentFragment` - the item 
 
 ### Returns
 `Element | Text| Document | DocumentFragment` - the item
