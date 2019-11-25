@@ -1,5 +1,7 @@
 # peso
-> Lodash for the DOM
+Lodash for the DOM
+
+![Build status](https://badgen.net/github/status/jamonserrano/peso) ![Coverage](https://badgen.net/codecov/c/github/jamonserrano/peso)
 
 Peso is a collection of composable functions for easy DOM manipulation. These functions are simple wrappers around the native DOM APIs to facilitate a functional programming style and they work seamlessly with lodash.
 
