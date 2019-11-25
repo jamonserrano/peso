@@ -232,6 +232,21 @@ Returns the closest ancestor of the item that matches the selector.
 ### Examples
 
 
+## create
+
+> `create(type)`
+
+Creates a new HTML element.
+
+### Arguments
+1. type: `string` - the type of the element
+
+### Returns
+2. `Element` the created element
+
+### Examples
+
+
 ## delegate
 
 > `delegate(listener)(selector)`
@@ -244,21 +259,6 @@ Delegates an event listener for descendant elements that match the selector.
 
 ### Returns
 `(e: Event) => void` - the delegated event listener function
-
-### Examples
-
-
-## element
-
-> `element(type)`
-
-Creates a new HTML element.
-
-### Arguments
-1. type: `string` - the type of the element
-
-### Returns
-2. `Element` the created element
 
 ### Examples
 
@@ -291,18 +291,6 @@ Finds the first descendant that matches the selector.
 
 ### Returns
 `Element | null` - the match
-
-### Examples
-
-
-## fragment
-
-> `fragment()`
-
-Creates a new document fragment.
-
-### Returns
-`DocumentFragment` - the new document fragment
 
 ### Examples
 
@@ -659,12 +647,6 @@ Sets one or more styles of the item.
 
 ### Examples
 
-
-## text
-
-> `text(content)`
-
-Creates a text node with the specified content.
 
 ### Arguments
 1. content: `string` - the text content
