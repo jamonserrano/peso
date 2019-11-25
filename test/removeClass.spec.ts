@@ -38,11 +38,4 @@ describe("removeClass", () => {
 		const result = removeClass(classNames)(el);
 		expect(el.classList.remove).toBeCalledWith(...classNames.split(" "));
 	});
-
-	it("should skip non-element targets", () => {
-		const items = [mockText(), mockFragment(), mockDocument()]
-		const remove = removeClass(className);
-
-		expect(items.map(remove)).toEqual(items);
-	});
 });
