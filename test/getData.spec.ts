@@ -1,6 +1,6 @@
 import { getData } from "../src/getData";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("getData", () => {
 	it("should get data attribute", () => {

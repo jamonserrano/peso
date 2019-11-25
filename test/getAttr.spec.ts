@@ -1,6 +1,6 @@
 import { getAttr } from "../src/getAttr";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("getAttr", () => {
 	it("should call getAttribute()", () => {

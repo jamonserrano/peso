@@ -1,6 +1,6 @@
 import { children } from "../src/children";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("children", () => {
 	it("should return the children of the item", () => {

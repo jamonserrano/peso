@@ -1,6 +1,6 @@
 import { setData } from "../src/setData";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("setData", () => {
 	it("should set the data attribute", () => {

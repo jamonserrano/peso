@@ -1,5 +1,5 @@
 import { getStyle } from "../src/getStyle";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("getStyle", () => {
 	it("should get the computed style", () => {

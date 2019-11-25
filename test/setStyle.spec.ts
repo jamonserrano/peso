@@ -1,6 +1,6 @@
 import { setStyle } from "../src/setStyle";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("setStyle", () => {
 	it("should set the styles", () => {

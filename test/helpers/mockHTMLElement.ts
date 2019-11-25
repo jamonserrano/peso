@@ -1,0 +1,1 @@
+export const mockHTMLElement = (type = "div") => document.createElement(type);

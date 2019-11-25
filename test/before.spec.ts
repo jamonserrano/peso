@@ -1,6 +1,6 @@
 import { before } from "../src/before";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("before", () => {
 	it("should call before()", () => {

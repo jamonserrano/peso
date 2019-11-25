@@ -1,6 +1,6 @@
 import { after } from "../src/after";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("after", () => {
 	it("should call after()", () => {

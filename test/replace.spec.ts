@@ -1,6 +1,6 @@
 import { replace } from "../src/replace";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("replace", () => {
 	it("should call replaceWith()", () => {

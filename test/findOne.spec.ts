@@ -1,6 +1,6 @@
 import { findOne } from "../src/findOne";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("findOne", () => {
 	it("should call scoped querySelector()", () => {

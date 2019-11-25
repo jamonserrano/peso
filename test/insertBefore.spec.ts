@@ -1,6 +1,6 @@
 import { insertBefore } from "../src/insertBefore";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("insertBefore", () => {
 	it("should call before()", () => {

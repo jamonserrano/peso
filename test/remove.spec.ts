@@ -1,6 +1,6 @@
 import { remove } from "../src/remove";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("remove", () => {
 	it("should call remove()", () => {

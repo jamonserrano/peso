@@ -1,5 +1,5 @@
 import { removeClass } from "../src/removeClass";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("removeClass", () => {
 	const className = "a";

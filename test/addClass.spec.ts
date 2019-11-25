@@ -1,5 +1,5 @@
 import { addClass } from "../src/addClass";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("addClass", () => {
 	const className = "a";

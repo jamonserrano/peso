@@ -1,6 +1,6 @@
 import { clone } from "../src/clone";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("clone", () => {
 	it("should call cloneNode()", () => {

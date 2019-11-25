@@ -1,5 +1,5 @@
 import { delegate } from "../src/delegate";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("delegate", () => {
 	it("should call the event listener when the selector is matched", () => {

@@ -1,6 +1,6 @@
 import { setAttr } from "../src/setAttr";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("setAttr", () => {
 	it("should call setAttribute()", () => {

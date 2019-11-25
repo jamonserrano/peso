@@ -1,6 +1,6 @@
 import { closest } from "../src/closest";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("closest", () => {
 	it("should call closest()", () => {

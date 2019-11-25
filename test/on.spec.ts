@@ -1,5 +1,5 @@
 import { on } from "../src/on";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("on", () => {
 	it("should call addEventListener", () => {

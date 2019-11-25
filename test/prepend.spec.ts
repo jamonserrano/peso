@@ -1,6 +1,6 @@
 import { prepend } from "../src/prepend";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("prepend", () => {
 	it("should call prepend()", () => {

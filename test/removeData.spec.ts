@@ -1,6 +1,6 @@
 import { removeData } from "../src/removeData";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("removeData", () => {
 	it("should remove data attribute", () => {

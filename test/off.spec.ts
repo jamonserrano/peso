@@ -1,5 +1,5 @@
 import { off } from "../src/off";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("off", () => {
 	it("should call removeEventListener", () => {

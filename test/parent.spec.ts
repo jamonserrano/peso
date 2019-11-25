@@ -1,6 +1,6 @@
 import { parent } from "../src/parent";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("parent", () => {
 	it("should return the parent of the item", () => {

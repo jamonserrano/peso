@@ -1,5 +1,5 @@
 import { hasClass } from "../src/hasClass";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("hasClass", () => {
 	it("should call classList.contains()", () => {

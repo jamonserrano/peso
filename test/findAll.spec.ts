@@ -1,6 +1,6 @@
 import { findAll } from "../src/findAll";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("findAll", () => {
 	it("should call scoped querySelectorAll()", () => {

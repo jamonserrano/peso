@@ -1,5 +1,5 @@
 import { toggleClass } from "../src/toggleClass";
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("toggleClass", () => {
 	const className = "a";

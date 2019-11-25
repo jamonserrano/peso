@@ -1,6 +1,6 @@
 import { removeAttr } from "../src/removeAttr";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("removeAttr", () => {
 	it("should call removeAttribute()", () => {

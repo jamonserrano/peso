@@ -1,6 +1,6 @@
 import { appendTo } from "../src/appendTo";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("appendTo", () => {
 	it("should call appendTo()", () => {

@@ -1,6 +1,6 @@
 import { append } from "../src/append";
 
-import { mockHTMLElement } from "./helpers/nodes";
+import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
 describe("append", () => {
 	it("should call append()", () => {
