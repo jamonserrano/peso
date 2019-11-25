@@ -1,1 +1,1 @@
-export declare const replaceWith: (subject: string | Element | Text | Document | DocumentFragment) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+export declare const replaceWith: (subject: string | Element | Text | DocumentFragment) => (item: Element | Text) => Element | Text;
