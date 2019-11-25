@@ -1,3 +1,5 @@
-export declare const setData: (data: {
+declare type Data = {
     [key: string]: any;
-}) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+};
+export declare const setData: (data: Data) => (item: HTMLElement) => HTMLElement;
+export {};
