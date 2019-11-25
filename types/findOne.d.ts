@@ -1,1 +1,1 @@
-export declare const findOne: (selector: string) => (item: Element | Document | DocumentFragment) => Element | null;
+export declare const findOne: (selector: string) => (item: Element | DocumentFragment | Document) => Element | null;

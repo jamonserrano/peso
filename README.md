@@ -367,7 +367,7 @@ Inserts the item after the target element.
 
 ### Arguments
 1. target: `Element | Text` - the target
-2. item: `Element | Text | DocumentFragment` - the item
+2. item: `Element | Text | DocumentFragment | string` - the item
 
 ### Returns
 `Element | Text | DocumentFragment` - the item
@@ -383,7 +383,7 @@ Inserts the item before the target element.
 
 ### Arguments
 1. target: `Element | Text` - the target
-2. item: `Element | Text | DocumentFragment` - the item
+2. item: `Element | Text | DocumentFragment | string` - the item
 
 ### Returns
 `Element | Text | DocumentFragment` - the item

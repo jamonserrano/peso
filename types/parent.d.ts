@@ -1,1 +1,1 @@
-export declare const parent: (item: Element | Text | Document | DocumentFragment) => HTMLElement | null;
+export declare const parent: (item: Element | Text | DocumentFragment | Document) => HTMLElement | null;

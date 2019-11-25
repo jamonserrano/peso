@@ -1,1 +1,1 @@
-export declare const appendTo: (target: Element | Document | DocumentFragment) => (item: string | Element | DocumentFragment | Text) => string | Element | DocumentFragment | Text;
+export declare const appendTo: (target: Element | DocumentFragment | Document) => (item: string | Element | Text | DocumentFragment) => string | Element | Text | DocumentFragment;

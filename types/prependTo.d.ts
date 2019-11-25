@@ -1,1 +1,1 @@
-export declare const prependTo: (target: Element | Document | DocumentFragment) => (item: string | Element | DocumentFragment | Text) => string | Element | DocumentFragment | Text;
+export declare const prependTo: (target: Element | DocumentFragment | Document) => (item: string | Element | Text | DocumentFragment) => string | Element | Text | DocumentFragment;
