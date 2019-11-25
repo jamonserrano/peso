@@ -35,11 +35,4 @@ describe("toggleClass", () => {
 		expect(result).toBe(el);
 		expect(el.classList.toggle).toBeCalledWith(className);
 	});
-
-	it("should skip non-element targets", () => {
-		const items = [mockText(), mockFragment(), mockDocument()]
-		const toggle = toggleClass(className);
-
-		expect(items.map(toggle)).toEqual(items);
-	});
 });
