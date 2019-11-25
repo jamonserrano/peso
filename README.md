@@ -79,7 +79,7 @@ Adds the specified class name(s) to the element.
 2. item: `Element` – the target element
 
 ### Returns
-`Element | Text | Document | DocumentFragment` - the item
+`Element` - the item
 
 ### Examples
 

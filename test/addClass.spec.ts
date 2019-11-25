@@ -1,5 +1,11 @@
 import { addClass } from "../src/addClass";
-import { mockHTMLElement, mockText, mockDocument, mockFragment, mockSVGElement } from "./helpers/nodes";
+import {
+	mockHTMLElement,
+	mockText,
+	mockDocument,
+	mockFragment,
+	mockSVGElement
+} from "./helpers/nodes";
 
 describe("addClass", () => {
 	const className = "a";
@@ -15,7 +21,7 @@ describe("addClass", () => {
 		el.classList.add = jest.fn();
 
 		const result = addClass(className)(el);
-		
+
 		expect(result).toBe(el);
 		expect(el.classList.add).toBeCalledWith(className);
 	});
@@ -25,7 +31,7 @@ describe("addClass", () => {
 		el.classList.add = jest.fn();
 
 		const result = addClass(className)(el);
-		
+
 		expect(result).toBe(el);
 		expect(el.classList.add).toBeCalledWith(className);
 	});
@@ -37,12 +43,5 @@ describe("addClass", () => {
 
 		const result = addClass(classNames)(el);
 		expect(el.classList.add).toBeCalledWith(...classNames.split(" "));
-	});
-
-	it("should skip non-element targets", () => {
-		const items = [mockText(), mockFragment(), mockDocument()]
-		const add = addClass(className);
-
-		expect(items.map(add)).toEqual(items);
 	});
 });
