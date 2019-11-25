@@ -1,1 +1,1 @@
-export declare const insertAfter: (target: Element | Text | Document | DocumentFragment) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+export declare const insertAfter: (target: Element | Text) => (item: Element | Text | DocumentFragment) => Element | Text | DocumentFragment;
