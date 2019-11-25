@@ -45,13 +45,6 @@ Returns the first element matching the selector string. The result can then be p
 ### Returns
 The first element matched by the selector
 
-### Examples
-
-```js
-const body = $("body");
-
-const firstSelectedItem = $("li.selected");
-```
 
 ## $$ (alias: qsa)
 > `$$(selector)`
@@ -64,11 +57,6 @@ Returns an array containing all elements matching the selector string. The resul
 ### Returns
 An array containing all elements matched by the selector
 
-### Examples
-
-```js
-const allSelectedItems = $$("li.selected");
-```
 
 ## addClass
 > `addClass(className)(item)`
@@ -83,36 +71,6 @@ Adds the specified class name(s) to the element.
 ### Returns
 `Element` - the item
 
-### Examples
-
-#### Single element
-
-```js
-const select = addClass("selected");
-const item = $("li");
-
-select(item);
-```
-
-#### Collection
-
-```js
-const select = addClass("selected");
-const allItems = $$("li");
-
-allItems.map(select);
-```
-
-#### Multiple class names
-
-```js
-import { $, addClass } from "peso";
-
-const selectAndHighlight = addClass("selected highlighted");
-const item = $("li");
-
-selectAndHighlight(item);
-```
 
 ## after
 
@@ -128,8 +86,6 @@ Inserts the subject after the item.
 
 ### Returns
 `Element | Text` - the item
-
-### Examples
 
 
 ## append
@@ -147,8 +103,6 @@ Appends the subject as the last child of the item.
 ### Returns
 `Element | Text| Document | DocumentFragment` - the item
 
-### Examples
-
 
 ## appendTo
 
@@ -163,8 +117,6 @@ Appends the item as the last child of the target.
 
 ### Returns
 `Element | Text | DocumentFragment | string` - the item
-
-### Examples
 
 
 ## before
@@ -182,8 +134,6 @@ Inserts the subject before the item.
 ### Returns
 `Element | Text ` - the item
 
-### Examples
-
 
 ## children
 
@@ -196,8 +146,6 @@ Returns the child elements of the item.
 
 ### Returns
 `Element[]` - the children of the item
-
-### Examples
 
 
 ## clone
@@ -216,8 +164,6 @@ Clones the item.
 
 `Element | Text | Document | DocumentFragment` - the clone of the item
 
-### Examples
-
 
 ## closest
 
@@ -231,7 +177,7 @@ Returns the closest ancestor of the item that matches the selector.
 
 ### Returns
 `Element | null` - the ancestor
-### Examples
+
 
 
 ## create
@@ -245,8 +191,6 @@ Creates a new HTML element.
 
 ### Returns
 2. `Element` the created element
-
-### Examples
 
 
 ## delegate
@@ -262,8 +206,6 @@ Delegates an event listener for descendant elements that match the selector.
 ### Returns
 `(e: Event) => void` - the delegated event listener function
 
-### Examples
-
 
 ## findAll
 
@@ -277,8 +219,6 @@ Finds all descendants that match the selector.
 
 ### Returns
 `Element[]` - the matched descendants
-
-### Examples
 
 
 ## findOne
@@ -294,8 +234,6 @@ Finds the first descendant that matches the selector.
 ### Returns
 `Element | null` - the match
 
-### Examples
-
 
 ## getAttr
 
@@ -309,8 +247,6 @@ Gets the specified attribute of the item.
 
 ### Returns
 `string` - the value of the attribute
-
-### Examples
 
 
 ## getData
@@ -326,8 +262,6 @@ Gets the specified data-attribute of the item.
 ### Returns
 `string` - the value of the data-attribute
 
-### Examples
-
 
 ## getStyle
 
@@ -341,8 +275,6 @@ Gets the specified style of the item
 
 ### Returns
 `string` - the value of the style rule
-
-### Examples
 
 
 ## hasClass
@@ -358,8 +290,6 @@ Determine if the class name is assigned to the item.
 ### Returns
 `boolean`
 
-### Examples
-
 
 ## insertAfter
 
@@ -374,8 +304,6 @@ Inserts the item after the target element.
 ### Returns
 `Element | Text | DocumentFragment` - the item
 
-### Examples
-
 
 ## insertBefore
 
@@ -389,8 +317,6 @@ Inserts the item before the target element.
 
 ### Returns
 `Element | Text | DocumentFragment` - the item
-
-### Examples
 
 
 ## off
@@ -408,8 +334,6 @@ Removes an event listener from the item.
 ### Returns
 `Element | Text | Document | DocumentFragment | Window` - the item
 
-### Examples
-
 
 ## on
 
@@ -426,8 +350,6 @@ Adds an event listener to the item.
 ### Returns
 `Element | Text | Document | DocumentFragment | Window` - the item
 
-### Examples
-
 
 ## parent
 
@@ -440,8 +362,6 @@ Returns the parent element of the item.
 
 ### Returns
 `Element | null` - the parent of the item
-
-### Examples
 
 
 ## prepend
@@ -459,8 +379,6 @@ Prepends the subject as the first child of the item.
 ### Returns
 `Element | Text| Document | DocumentFragment` - the item
 
-### Examples
-
 
 ## prependTo
 
@@ -476,8 +394,6 @@ Prepends the item as the first child of the target.
 ### Returns
 `Element | Text | DocumentFragment | string` - the item
 
-### Examples
-
 
 ## qs (alias: $)
 > `qs(selector)`
@@ -489,8 +405,6 @@ Returns the first element matching the selector string. The result can then be p
 
 ### Returns
 The first element matched by the selector
-
-### Examples
 
 
 ## qsa
@@ -504,8 +418,6 @@ Returns an array containing all elements matching the selector string. The resul
 ### Returns
 An array containing all elements matched by the selector
 
-### Examples
-
 
 ## remove
 
@@ -518,8 +430,6 @@ Removes the item from the DOM.
 
 ### Returns
 `void`
-
-### Examples
 
 
 ## removeAttr
@@ -535,8 +445,6 @@ Removes the specified attribute from the item.
 ### Returns
 `Element` - the item
 
-### Examples
-
 
 ## removeClass
 
@@ -550,8 +458,6 @@ Removes the specified class name from the item.
 
 ### Returns
 `Element` - the item
-
-### Examples
 
 
 ## removeData
@@ -567,8 +473,6 @@ Removes a data-attribute of the item.
 ### Returns
 `HTMLElement` - the item
 
-### Examples
-
 
 ## replace
 
@@ -582,8 +486,6 @@ Replaces the target with the item.
 
 ### Returns
 `Element | Text | DocumentFragment` - the item
-
-### Examples
 
 
 ## replaceWith
@@ -599,8 +501,6 @@ Replaces the item with the subject.
 ### Returns
 `Element | Text` - the item that was replaced
 
-### Examples
-
 
 ## setAttr
 
@@ -614,8 +514,6 @@ Sets one or more attributes of the item.
 
 ### Returns
 `Element` - the item
-
-### Examples
 
 
 ## setData
@@ -631,8 +529,6 @@ Sets one or more data-attributes of the item.
 ### Returns
 `Element` - the item
 
-### Examples
-
 
 ## setStyle
 
@@ -647,16 +543,12 @@ Sets one or more styles of the item.
 ### Returns
 `Element` - the item
 
-### Examples
-
 
 ### Arguments
 1. content: `string` - the text content
 
 ### Returns
 `Text` - the created text node
-
-### Examples
 
 
 ## toggleClass
@@ -672,8 +564,6 @@ Toggles a class name of the item.
 ### Returns
 `Element` - the item
 
-### Examples
-
 
 ## unwrap
 
@@ -687,8 +577,6 @@ Unwraps a collection or item. If the argument is iterable it unwraps and returns
 ### Returns
 `any` - the unwrapped value
 
-### Examples
-
 
 ## wrap
 
@@ -701,8 +589,6 @@ Wraps the item or collection in an array.
 
 ### Returns
 `any[]` - the wrapped value
-
-### Examples
 
 
 
