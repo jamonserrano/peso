@@ -1,1 +1,1 @@
-export declare const replace: (target: Element | Text | Document | DocumentFragment) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+export declare const replace: (target: Element | Text) => (item: string | Element | Text | DocumentFragment) => string | Element | Text | DocumentFragment;
