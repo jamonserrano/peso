@@ -1,6 +1,6 @@
 {
 	"name": "peso",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Lodash for the DOM",
 	"main": "lib/index.js",
 	"module": "lib/index.js",
