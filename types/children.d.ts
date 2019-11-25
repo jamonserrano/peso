@@ -1,1 +1,1 @@
-export declare const children: (item: Element | Text | Document | DocumentFragment) => Element[];
+export declare const children: (item: Element | Document | DocumentFragment) => Element[];
