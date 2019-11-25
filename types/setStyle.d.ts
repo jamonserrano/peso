@@ -1,3 +1,5 @@
-export declare const setStyle: (rules: {
+declare type Rules = {
     [name: string]: string;
-}) => (item: Element | Text | Document | DocumentFragment) => Element | Text | Document | DocumentFragment;
+};
+export declare const setStyle: (rules: Rules) => (item: HTMLElement) => HTMLElement;
+export {};
