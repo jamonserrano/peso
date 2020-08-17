@@ -9,7 +9,7 @@ describe("on", () => {
 		const listener = () => {};
 		const type = "click";
 
-		const result = on(options)(listener)(type)(item);
+		const result = on(listener, options)(type)(item);
 
 		expect(result).toBe(item);
 		expect(item.addEventListener).toBeCalledWith(type, listener, options);

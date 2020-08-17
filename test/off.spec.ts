@@ -9,7 +9,7 @@ describe("off", () => {
 		const listener = () => {};
 		const type = "click";
 
-		const result = off(options)(listener)(type)(item);
+		const result = off(listener, options)(type)(item);
 
 		expect(result).toBe(item);
 		expect(item.removeEventListener).toBeCalledWith(type, listener, options);

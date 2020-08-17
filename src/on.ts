@@ -1,6 +1,4 @@
-export const on = (options: EventListenerOptions = {}) => (
-	listener: (e: Event) => any
-) => (event: string) => (
+export const on = (listener: (e: Event) => any, options: EventListenerOptions = {}) => (event: string) => (
 	item: Element | Text | Document | DocumentFragment | Window
 ) => {
 	item.addEventListener(event, listener, options);
