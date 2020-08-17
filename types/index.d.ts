@@ -10,6 +10,7 @@ export { create } from "./create";
 export { delegate } from "./delegate";
 export { findAll } from "./findAll";
 export { findOne } from "./findOne";
+export { forceClass } from "./forceClass";
 export { getAttr } from "./getAttr";
 export { getData } from "./getData";
 export { getStyle } from "./getStyle";

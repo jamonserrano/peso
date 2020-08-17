@@ -34,7 +34,7 @@ import * as peso from "peso";
 
 # Functions
 
-[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [create](#create), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
+[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [create](#create), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
 
 ## $ (alias: qs)
 > `$(selector)`
@@ -235,6 +235,22 @@ Finds the first descendant that matches the selector.
 
 ### Returns
 `Element | null` - the match
+
+
+## forceClass
+
+> `forceClass(className)(force)(item)`
+
+Toggles a class name of the item.
+
+### Arguments
+1. className: `string` - the class name to toggle
+2. force: `?boolean` - force adding or removing the class name
+3. item: `Element` - the item
+
+### Returns
+`boolean` - indicates if the element has the class name after the call
+(If you need to return the element instead, use [toggleClass](#toggleclass))
 
 
 ## getAttr
@@ -555,16 +571,18 @@ Sets one or more styles of the item.
 
 ## toggleClass
 
-> `toggleClass(className)(item)`
+> `toggleClass(className)(force)(item)`
 
 Toggles a class name of the item.
 
 ### Arguments
 1. className: `string` - the class name to toggle
-2. item: `Element` - the item
-
+2. force: `?boolean` - force adding or removing the class name
+3. item: `Element` - the item
+ 
 ### Returns
 `Element` - the item
+(If you need to return the result of the toggle, use [forceClass](#forceclass))
 
 
 ## unwrap
