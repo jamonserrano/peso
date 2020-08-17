@@ -17,6 +17,7 @@ export { getStyle } from "./getStyle";
 export { hasClass } from "./hasClass";
 export { insertAfter } from "./insertAfter";
 export { insertBefore } from "./insertBefore";
+export { matches } from "./matches";
 export { off } from "./off";
 export { on } from "./on";
 export { parent } from "./parent";

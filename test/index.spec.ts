@@ -22,6 +22,7 @@ describe("peso", () => {
 			"hasClass",
 			"insertAfter",
 			"insertBefore",
+			"matches",
 			"off",
 			"on",
 			"parent",
