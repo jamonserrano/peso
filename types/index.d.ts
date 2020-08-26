@@ -7,6 +7,7 @@ export { children } from "./children";
 export { clone } from "./clone";
 export { closest } from "./closest";
 export { createElement } from "./createElement";
+export { createText } from "./createText";
 export { delegate } from "./delegate";
 export { findAll } from "./findAll";
 export { findOne } from "./findOne";

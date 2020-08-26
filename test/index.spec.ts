@@ -12,6 +12,7 @@ describe("peso", () => {
 			"clone",
 			"closest",
 			"createElement",
+			"createText",
 			"delegate",
 			"findAll",
 			"findOne",
