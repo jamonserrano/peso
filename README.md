@@ -34,7 +34,7 @@ import * as peso from "peso";
 
 # Functions
 
-[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure),[off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
+[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [createFragment](#createFragment), [createText](#createText), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure),[off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
 
 ## $ (alias: qs)
 > `$(selector)`
@@ -181,7 +181,6 @@ Returns the closest ancestor of the item that matches the selector.
 `Element | null` - the ancestor
 
 
-
 ## createElement
 
 > `createElement(type)`
@@ -193,6 +192,30 @@ Creates a new HTML element.
 
 ### Returns
 2. `Element` the created element
+
+
+
+## createFragment
+
+> `createFragment()`
+
+Creates a new document fragment.
+
+### Returns
+2. `DocumentFragment` the created document fragment
+
+
+## createText
+
+> `createText(content)`
+
+Creates a new text node.
+
+### Arguments
+1. content: `string` - the content of the text node
+
+### Returns
+2. `Text` the created text node
 
 
 ## delegate
