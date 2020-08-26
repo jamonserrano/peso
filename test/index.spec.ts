@@ -41,9 +41,7 @@ describe("peso", () => {
 			"setAttr",
 			"setData",
 			"setStyle",
-			"toggleClass",
-			"unwrap",
-			"wrap"
+			"toggleClass"
 		];
 
 		expect(Object.keys(peso)).toEqual(exports);
