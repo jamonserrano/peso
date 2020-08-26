@@ -239,7 +239,7 @@ Finds the first descendant that matches the selector.
 
 ## forceClass
 
-> `forceClass(className, force)(item)`
+> `forceClass(className)(force)(item)`
 
 Toggles a class name of the item.
 
@@ -353,13 +353,13 @@ Checks if the item would be selected by the provided selector.
 
 ## off
 
-> `off(listener, options)(event)(item)`
+> `off(options)(listener)(event)(item)`
 
 Removes an event listener from the item.
 
 ### Arguments
-1. listener: `Event => void` - the event listener
-2. options: `?EventListenerOptions` - event listener options
+1. options: `EventListenerOptions` - event listener options
+2. listener: `Event => void` - the event listener
 3. event: `string` - the event type
 4. item: `Element | Text | Document | DocumentFragment | Window` - the item
 
@@ -369,13 +369,13 @@ Removes an event listener from the item.
 
 ## on
 
-> `on(listener, options)(event)(item)`
+> `on(options)(listener)(event)(item)`
 
 Adds an event listener to the item.
 
 ### Arguments
-1. listener: `Event => void` - the event listener
-2. options: `?EventListenerOptions` - event listener options
+1. options: `EventListenerOptions` - event listener options
+2. listener: `Event => void` - the event listener
 3. event: `string` - the event type
 4. item: `Element | Text | Document | DocumentFragment | Window` - the item
 
@@ -585,7 +585,7 @@ Sets one or more styles of the item.
 
 ## toggleClass
 
-> `toggleClass(className, force)(item)`
+> `toggleClass(className)(force)(item)`
 
 Toggles a class name of the item.
 

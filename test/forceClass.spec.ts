@@ -9,7 +9,7 @@ describe("forceClass", () => {
 		const el = mockHTMLElement();
 		el.classList.toggle = jest.fn(() => returnValue);
 
-		const result = forceClass(className, force)(el);
+		const result = forceClass(className)(force)(el);
 
 		expect(result).toBe(returnValue);
 		expect(el.classList.toggle).toBeCalledWith(className, force);
