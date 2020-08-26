@@ -18,6 +18,7 @@ export { hasClass } from "./hasClass";
 export { insertAfter } from "./insertAfter";
 export { insertBefore } from "./insertBefore";
 export { matches } from "./matches";
+export { measure } from "./measure";
 export { off } from "./off";
 export { on } from "./on";
 export { parent } from "./parent";

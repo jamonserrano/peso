@@ -34,7 +34,7 @@ import * as peso from "peso";
 
 # Functions
 
-[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [create](#create), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
+[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [create](#create), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure),[off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
 
 ## $ (alias: qs)
 > `$(selector)`
@@ -351,6 +351,19 @@ Checks if the item would be selected by the provided selector.
 `boolean` - the match
 
 
+## measure
+
+> `measure(item)`
+
+Measures the item and returns its DOMRect.
+
+### Arguments
+1. item: `Element` - the item
+
+### Returns
+`DOMRect` - the DOMRect of the item
+
+
 ## off
 
 > `off(options)(listener)(event)(item)`
@@ -597,33 +610,6 @@ Toggles a class name of the item.
 ### Returns
 `Element` - the item
 (If you need to return the result of the toggle, use [forceClass](#forceclass))
-
-
-## unwrap
-
-> `unwrap(itemOrCollection)`
-
-Unwraps a collection or item. If the argument is iterable it unwraps and returns the first item. Otherwise it returns the item.
-
-### Arguments
-1. itemOrCollection: `any | any[]` - the collection or item to unwrap
-
-### Returns
-`any` - the unwrapped value
-
-
-## wrap
-
-> `wrap(itemOrCollection)`
-
-Wraps the item or collection in an array.
-
-### Arguments
-1. itemOrCollection: `any` - the collection or item to wrap
-
-### Returns
-`any[]` - the wrapped value
-
 
 
 # License

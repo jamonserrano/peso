@@ -23,6 +23,7 @@ describe("peso", () => {
 			"insertAfter",
 			"insertBefore",
 			"matches",
+			"measure",
 			"off",
 			"on",
 			"parent",
