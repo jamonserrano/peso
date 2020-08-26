@@ -4,6 +4,7 @@ describe("peso", () => {
 	it("should export all the functions", () => {
 		const exports = [
 			"addClass",
+			"addListener",
 			"after",
 			"append",
 			"appendTo",
@@ -26,8 +27,6 @@ describe("peso", () => {
 			"insertBefore",
 			"matches",
 			"measure",
-			"off",
-			"on",
 			"parent",
 			"prepend",
 			"prependTo",
@@ -39,6 +38,7 @@ describe("peso", () => {
 			"removeAttr",
 			"removeClass",
 			"removeData",
+			"removeListener",
 			"replace",
 			"replaceWith",
 			"setAttr",

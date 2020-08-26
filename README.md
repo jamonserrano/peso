@@ -34,7 +34,7 @@ import * as peso from "peso";
 
 # Functions
 
-[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [createFragment](#createFragment), [createText](#createText), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure),[off](#off), [on](#on), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
+[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [addListener](#addListener), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [createFragment](#createFragment), [createText](#createText), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [removeListener](#removeListener), [replace](#replace), [replaceWith](#replacewith), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
 
 ## $ (alias: qs)
 > `$(selector)`
@@ -72,6 +72,22 @@ Adds the specified class name(s) to the element.
 
 ### Returns
 `Element` - the item
+
+
+## addListener
+
+> `addListener(options)(listener)(event)(item)`
+
+Adds an event listener to the item.
+
+### Arguments
+1. options: `EventListenerOptions` - event listener options
+2. listener: `Event => void` - the event listener
+3. event: `string` - the event type
+4. item: `Element | Text | Document | DocumentFragment | Window` - the item
+
+### Returns
+`Element | Text | Document | DocumentFragment | Window` - the item
 
 
 ## after
@@ -387,38 +403,6 @@ Measures the item and returns its DOMRect.
 `DOMRect` - the DOMRect of the item
 
 
-## off
-
-> `off(options)(listener)(event)(item)`
-
-Removes an event listener from the item.
-
-### Arguments
-1. options: `EventListenerOptions` - event listener options
-2. listener: `Event => void` - the event listener
-3. event: `string` - the event type
-4. item: `Element | Text | Document | DocumentFragment | Window` - the item
-
-### Returns
-`Element | Text | Document | DocumentFragment | Window` - the item
-
-
-## on
-
-> `on(options)(listener)(event)(item)`
-
-Adds an event listener to the item.
-
-### Arguments
-1. options: `EventListenerOptions` - event listener options
-2. listener: `Event => void` - the event listener
-3. event: `string` - the event type
-4. item: `Element | Text | Document | DocumentFragment | Window` - the item
-
-### Returns
-`Element | Text | Document | DocumentFragment | Window` - the item
-
-
 ## parent
 
 > `parent(item)`
@@ -540,6 +524,23 @@ Removes a data-attribute of the item.
 
 ### Returns
 `HTMLElement` - the item
+
+
+## removeListener
+
+> `removeListener(options)(listener)(event)(item)`
+
+Removes an event listener from the item.
+
+### Arguments
+1. options: `EventListenerOptions` - event listener options
+2. listener: `Event => void` - the event listener
+3. event: `string` - the event type
+4. item: `Element | Text | Document | DocumentFragment | Window` - the item
+
+### Returns
+`Element | Text | Document | DocumentFragment | Window` - the item
+
 
 
 ## replace

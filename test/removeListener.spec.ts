@@ -1,7 +1,7 @@
-import { off } from "../src/off";
+import { removeListener } from "../src/removeListener";
 import { mockHTMLElement } from "./helpers/mockHTMLElement";
 
-describe("off", () => {
+describe("removeListener", () => {
 	it("should call removeEventListener", () => {
 		const item = mockHTMLElement();
 		item.removeEventListener = jest.fn();
@@ -9,7 +9,7 @@ describe("off", () => {
 		const listener = () => {};
 		const type = "click";
 
-		const result = off(options)(listener)(type)(item);
+		const result = removeListener(options)(listener)(type)(item);
 
 		expect(result).toBe(item);
 		expect(item.removeEventListener).toBeCalledWith(type, listener, options);
