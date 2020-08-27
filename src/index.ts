@@ -36,6 +36,7 @@ export { removeData } from "./removeData";
 export { removeListener } from "./removeListener";
 export { replace } from "./replace";
 export { replaceWith } from "./replaceWith";
+export { set } from "./set";
 export { setAttr } from "./setAttr";
 export { setData } from "./setData";
 export { setStyle } from "./setStyle";

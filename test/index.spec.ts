@@ -41,6 +41,7 @@ describe("peso", () => {
 			"removeListener",
 			"replace",
 			"replaceWith",
+			"set",
 			"setAttr",
 			"setData",
 			"setStyle",
