@@ -19,6 +19,7 @@ describe("peso", () => {
 			"findAll",
 			"findOne",
 			"forceClass",
+			"get",
 			"getAttr",
 			"getData",
 			"getStyle",

@@ -34,7 +34,7 @@ import * as peso from "peso";
 
 # Functions
 
-[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [addListener](#addListener), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [createFragment](#createFragment), [createText](#createText), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [removeListener](#removeListener), [replace](#replace), [replaceWith](#replacewith), [set](#set), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
+[$](#-alias-qs), [$$](#-alias-qsa), [addClass](#addclass), [addListener](#addListener), [after](#after), [append](#append), [appendTo](#appendto), [before](#before), [children](#children), [clone](#clone), [closest](#closest), [createElement](#createElement), [createFragment](#createFragment), [createText](#createText), [delegate](#delegate), [findAll](#findall), [findOne](#findone), [forceClass](#forceclass), [get](#get), [getAttr](#getattr), [getData](#getdata), [getStyle](#getstyle), [hasClass](#hasclass), [insertAfter](#insertafter), [insertBefore](#insertbefore), [matches](#matches), [measure](#measure), [parent](#parent), [prepend](#prepend), [prependTo](#prependto), [qs](#qs-alias-), [qsa](#qsa), [remove](#remove), [removeAttr](#removeattr), [removeClass](#removeclass), [removeData](#removedata), [removeListener](#removeListener), [replace](#replace), [replaceWith](#replacewith), [set](#set), [setAttr](#setattr), [setData](#setdata), [setStyle](#setstyle), [toggleClass](#toggleclass), [unwrap](#unwrap), [wrap](#wrap)
 
 ## $ (alias: qs)
 > `$(selector)`
@@ -292,14 +292,28 @@ Toggles a class name of the item.
 (If you need to return the element instead, use [toggleClass](#toggleclass))
 
 
+## get
+
+> `get(property)(item)`
+
+Gets the specified property of the item.
+
+### Arguments
+1. property: `string` - the name of the property
+2. item: `Element` - the item
+
+### Returns
+`string` - the value of the property
+
+
 ## getAttr
 
-> `getAttr(attributeName)(item)`
+> `getAttr(attribute)(item)`
 
 Gets the specified attribute of the item.
 
 ### Arguments
-1. attributeName: `string` - the name of the attribute
+1. attribute: `string` - the name of the attribute
 2. item: `Element` - the item
 
 ### Returns

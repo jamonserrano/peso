@@ -1,6 +1,6 @@
 import { set } from "../src/set";
 
-describe("se", () => {
+describe("set", () => {
 	it("should set the property", () => {
 		const item = {};
 		const key = "a";

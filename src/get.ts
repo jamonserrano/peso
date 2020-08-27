@@ -1,0 +1,1 @@
+export const get = (property: string) => (item: any) => item[property];
