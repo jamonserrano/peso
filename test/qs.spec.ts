@@ -9,6 +9,16 @@ describe("qs", () => {
 		const result = qs(selector);
 
 		expect(document.querySelector).toBeCalledWith(selector);
-		expect(result).toBe(value);
+		expect(result).toEqual([value]);
+	});
+
+	it("should return an empty array when there is no result", () => {
+		const selector = "a";
+		document.querySelector = jest.fn().mockReturnValue(null);
+
+		const result = qs(selector);
+
+		expect(document.querySelector).toBeCalledWith(selector);
+		expect(result).toEqual([]);
 	});
 });
